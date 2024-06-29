@@ -1,11 +1,11 @@
-/*===== GOOGLE FONTS =====*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/*===== VARIABLES CSS =====*/
+
 :root{
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
+   
     --first-color: #DA2535;
     --first-color-alt: #C42130;
     --first-color-send: #DE3B49;
@@ -15,7 +15,7 @@
     --body-color: #FEFBFB;
     --container-color: #FFF;
 
-    /*========== Font and typography ==========*/
+    
     --body-font: 'Poppins', sans-serif;
 
     --biggest-font-size: 2rem;
@@ -32,11 +32,11 @@
         --small-font-size: .875rem;
     }
 
-    /*========== Font weight ==========*/
+   
     --font-semi-bold: 600;
     --font-bold: 700;
 
-    /*========== Margenes ==========*/
+   
     --mb-1: .5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
@@ -44,12 +44,12 @@
     --mb-5: 2.5rem;
     --mb-6: 3rem;
 
-    /*========== z index ==========*/
+    
     --z-tooltip: 10;
     --z-fixed: 100;
 }
 
-/*========== BASE ==========*/
+
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -58,7 +58,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme{
     --first-color-send: #161212;
     --title-color: #F3F1F1;
@@ -67,7 +67,7 @@ body.dark-theme{
     --container-color: #302728;
 }
 
-/*========== Button Dark/Light ==========*/
+
 .change-theme {
     position: absolute;
     right: 1.5rem;
@@ -107,7 +107,7 @@ img{
     height: auto;
 }
 
-/*========== CLASS CSS ==========*/
+
 .section{
     padding: 4rem 0 2rem;
     
@@ -119,7 +119,7 @@ img{
     }
 }
 
-/*========== LAYOUT ==========*/
+
 .l-main{
     overflow: hidden;
 }
@@ -144,7 +144,7 @@ img{
     background-color: var(--body-color);
 }
 
-/*========== NAV ==========*/
+
 .nav{
     height: var(--header-height);
     display: flex;
@@ -193,12 +193,12 @@ img{
     }
 }
 
-/* Show menu */
+
 .show-menu{
     top: calc(var(--header-height) + 1rem);
 }
 
-/* Active menu link */
+
 .active-link{
     position: relative;
 
@@ -214,12 +214,12 @@ img{
     }
 }
 
-/* Change background header */
+
 .scroll-header{
     box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
 
-/* Scroll top */
+
 .scrolltop{
     position: fixed;
     right: 1rem;
@@ -249,7 +249,7 @@ img{
     bottom: 1.5rem;
 }
 
-/*========== HOME ==========*/
+
 .home{
     &__container{
         row-gap: .5rem;
@@ -268,7 +268,7 @@ img{
     }
 }
 
-/*========== BUTTONS ==========*/
+
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -294,7 +294,7 @@ img{
     }
 }
 
-/*========== SHARE ==========*/
+
 .share{
     &__data{
         text-align: center;
@@ -309,7 +309,7 @@ img{
 }
 
 
-/*========== DECORATION ==========*/
+
 .decoration{
     &__container{
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -334,7 +334,7 @@ img{
     }
 }
 
-/*========== ACCESSORIES ==========*/
+
 .accessory{
     &__container{
         grid-template-columns: repeat(2, 1fr);
@@ -383,7 +383,7 @@ img{
     }
 }
 
-/*========== SEND GIFT ==========*/
+
 .send{
     background-color: var(--first-color-send);
 
@@ -418,7 +418,7 @@ img{
     }
 }
 
-/*========== FOOTER ==========*/
+
 .footer{
     &__container{
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -458,8 +458,8 @@ img{
     }
 }
 
-/*========== MEDIA QUERIES ==========*/
-/* For full-screen images on small screens */
+
+
 @media screen and (max-width: 359px){
     .home__img,
     .share__img,
